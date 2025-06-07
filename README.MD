@@ -1,6 +1,9 @@
+
 <div dir="rtl">
 
 ## ⚠️ توجه: این برنامه در حال توسعه و تکمیل شدن است
+
+**درخواست مهم:** از متخصصین میکروتیک تقاضا دارم بک‌آپ یک لینک رادیویی (استیشن و اکسس پوینت) در نسخه‌های ۶ و ۷ میکروتیک را برای من بفرستند تا برنامه را تکمیل کنم.
 
 ## ابزار تولید اسکریپت MikroTik
 
@@ -57,6 +60,8 @@ python mikrotik.py
 
 ## ⚠️ Note: This program is under development and not yet complete
 
+**Important Request:** We request MikroTik experts to send backup of a radio link (Station and Access Point) for MikroTik versions 6 and 7 to help complete the program.
+
 With this tool, you can set up your MikroTik radio links with minimal technical knowledge!  
 This application provides a simple graphical interface for generating MikroTik configuration scripts, allowing you to easily set up initial configurations for your MikroTik devices.
 
@@ -98,6 +103,6 @@ python mikrotik.py
 (Images will be added later)
 
 ### Development Status
-This program was developed by [Your Name] and is currently under development. New features will be added incrementally. Contributions to the project are welcome.
+This program was developed by m.ali abbaspor and is currently under development. New features will be added incrementally. Contributions to the project are welcome.
 
 [Intellsoft](https://intellsoft.ir)
