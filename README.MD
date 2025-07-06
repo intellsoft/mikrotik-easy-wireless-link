@@ -83,12 +83,6 @@
     python mikrotik.py
     ```
 
-## 📸 تصاویر (به زودی)
-
-  * تصویر ۱: رابط کاربری اصلی
-  * تصویر ۲: فیلدهای ورودی
-  * تصویر ۳: اسکریپت تولید شده
-
 ## 👨‍💻 درباره توسعه‌دهنده
 
 این پروژه توسط [محمدعلی عباسپور](https://intellsoft.ir/) توسعه یافته است.
@@ -189,12 +183,6 @@ The generated script includes commands for:
     ```bash
     python mikrotik.py
     ```
-
-## 📸 Screenshots (Coming Soon)
-
-  * Screenshot 1: Main UI
-  * Screenshot 2: Input Fields
-  * Screenshot 3: Generated Script
 
 ## 👨‍💻 About the Developer
 
