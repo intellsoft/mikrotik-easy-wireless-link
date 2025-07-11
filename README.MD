@@ -94,12 +94,6 @@
 
 این پروژه تحت مجوز [MIT License](https://www.google.com/search?q=LICENSE) منتشر شده است.
 
-## 📝 نسخه
-
-**نسخه: 0.1**
-
------
-
 -----
 
 # MikroTik Easy Wireless Link Configuration Tool
