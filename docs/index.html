@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.seo.title }}</title>
+    <meta name="description" content="{{ site.seo.description }}">
+    <meta name="keywords" content="{{ site.seo.keywords | join: ', ' }}">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>{{ site.title }}</h1>
+                <p>{{ site.description }}</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn primary-btn">دانلود نرم‌افزار</a>
+                    <a href="{{ site.github_repo }}" class="btn secondary-btn">مشاهده کد منبع</a>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="assets/screenshot.png" alt="نمای نرم‌افزار تنظیم لینک وایرلس میکروتیک">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="features">
+            <h2>ویژگی‌های اصلی</h2>
+            <div class="features-grid">
+                {% for feature in site.features %}
+                <div class="feature-card">
+                    <div class="feature-icon">{{ feature.icon }}</div>
+                    <h3>{{ feature.title }}</h3>
+                    <p>{{ feature.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>کاربردهای نرم‌افزار</h2>
+            <div class="applications-container">
+                <ul class="applications-list">
+                    {% for application in site.applications %}
+                    <li>{{ application }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="applications-image">
+                    <img src="assets/wireless-link.png" alt="لینک وایرلس میکروتیک">
+                </div>
+            </div>
+        </section>
+
+        <section id="modes">
+            <h2>حالت‌های پشتیبانی شده</h2>
+            <div class="modes-container">
+                <div class="mode">
+                    <h3>AP (یک نقطه به چند نقطه)</h3>
+                    <p>ایجاد اکسس پوینت برای اتصال چندین کلاینت</p>
+                </div>
+                <div class="mode">
+                    <h3>AP (یک نقطه به یک نقطه)</h3>
+                    <p>اتصال دو نقطه با لینک اختصاصی</p>
+                </div>
+                <div class="mode">
+                    <h3>استیشن</h3>
+                    <p>اتصال به اکسس پوینت به عنوان کلاینت</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>نحوه کار با ابزار</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>نوع لینک را انتخاب کنید</h3>
+                    <p>نوع لینک وایرلس مورد نیاز خود را انتخاب نمایید</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>اطلاعات رادیو را وارد کنید</h3>
+                    <p>اطلاعات رادیوهای MikroTik را در دو طرف لینک وارد کنید</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>تنظیمات شبکه را مشخص کنید</h3>
+                    <p>آدرس‌های IP، ماسک شبکه و دیگر تنظیمات را وارد نمایید</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>اسکریپت تولید شده را اجرا کنید</h3>
+                    <p>اسکریپت‌های تولید شده را در روترهای MikroTik اجرا کنید</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <h2>دانلود نرم‌افزار</h2>
+            <div class="download-section">
+                <div class="version-info">
+                    <p>نسخه فعلی: <strong>1.3.0</strong></p>
+                    <p>حجم: <strong>12MB</strong></p>
+                    <div class="system-requirements">
+                        <h3>نیازمندی‌های سیستم:</h3>
+                        <ul>
+                            <li>ویندوز 10 و بالاتر</li>
+                            <li>حداقل 2GB RAM</li>
+                            <li>100MB فضای خالی دیسک</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="download-options">
+                    <div class="download-buttons">
+                        <a href="#" class="btn download-btn">
+                            <span class="os-icon">🪟</span>
+                            نسخه ویندوز
+                        </a>
+                        <a href="#" class="btn download-btn">
+                            <span class="os-icon">🐧</span>
+                            نسخه لینوکس
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>نظرات کاربران</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p>"با این ابزار توانستم در کمتر از 5 دقیقه لینک وایرلس بین دو ساختمان راه‌اندازی کنم، در حالی که قبلاً این کار بیش از یک ساعت زمان می‌برد!"</p>
+                    <div class="author">
+                        <strong>رضا محمدی</strong>
+                        <span>تکنسین شبکه، شرکت ارتباطات نوین</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"به عنوان کسی که دانش فنی محدودی در MikroTik دارم، این ابزار زندگی من رو ساده کرده. حالا می‌تونم به راحتی لینک‌های وایرلس برای مشتریانم راه‌اندازی کنم."</p>
+                    <div class="author">
+                        <strong>فاطمه حسینی</strong>
+                        <span>فریلنسر شبکه‌های وایرلس</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ابزار تنظیم آسان لینک وایرلس میکروتیک</h3>
+                    <p>راه‌حل سریع و بدون دردسر برای راه‌اندازی لینک‌های بی‌سیم</p>
+                </div>
+                <div class="footer-links">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="{{ site.github_repo }}">صفحه پروژه در GitHub</a></li>
+                        <li><a href="{{ site.author.url }}">وبسایت اینتل سافت</a></li>
+                        <li><a href="mailto:{{ site.author.email }}">پشتیبانی فنی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>ارتباط با ما</h4>
+                    <p>ایمیل: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+                    <p>وبسایت: <a href="{{ site.author.url }}">{{ site.author.url }}</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© {{ site.time | date: '%Y' }} توسعه داده شده توسط {{ site.author.name }}. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
